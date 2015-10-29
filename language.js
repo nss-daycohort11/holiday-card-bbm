@@ -1,14 +1,25 @@
-var language = (function() {
+var Language = (function() {
 	//private interface
-	var lexicon =["merry", "christmas", "and", "a", "happy", "new", "year"];
+	var lexicon =[];
 
 	// public interface
 	return {
 		getLexicon: function() {
 			return lexicon;
+		},
+
+		setLexicon: function() {
+			var userInput = $("#inputBox").val();
+			var inputLower = userInput.toLowerCase();
+
+			var inputArray = inputLower.split(" ");
+
+			lexicon.push(inputArray);
+			console.log(lexicon);
 		}
 	};
 
 })();
 
-console.log("language", language);
+console.log("language", Language);
+
