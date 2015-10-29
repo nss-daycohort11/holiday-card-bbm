@@ -1,4 +1,5 @@
 var Language = (function() {
+
 	//private interface
 	var lexicon =[];
 
@@ -11,6 +12,7 @@ var Language = (function() {
 			//take new array and place in language object
 
 
+	
 	// public interface
 	return {
 		getLexicon: function() {
@@ -18,22 +20,28 @@ var Language = (function() {
 		},
 
 
-		 setLexicon: function(){
-		var userInput = $("#inputBox").val();
-		var inputLower = userInput.toLowerCase();
-		
-		//convert this to array
-		var inputArray = inputLower.split(" ");
-		
-		lexicon.push(inputArray);
+		setLexicon: function(){
+			var userInput = $("#inputBox").val();
+			var inputLower = userInput.toLowerCase();
+				
+			//convert this to array
+			  var inputArray = inputLower.split(" ");
+				
+			  lexicon.push(inputArray);
 
-		// 	//push array into lexicon variable
-		 }
+			// 	push array into lexicon variable
+		 },
+
+		clearLexicon: function(){
+			lexicon = [];
+
+		}
+
+
 
 	};
 
 })();
-
 
 console.log("language", Language);
 

@@ -16,6 +16,7 @@
 
 	// public interface
 		language.translateToGerman = function() {
+			$("#translation").html("");
 			for (var i = 0; i < Language.getLexicon()[0].length; i++) {
 				var word = Language.getLexicon()[0][i];
 				switch(word){

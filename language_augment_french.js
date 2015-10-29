@@ -15,6 +15,7 @@ var Language = (function(langObjPassed){
 
 //public interface
 	langObjPassed.translateToFrench = function(){
+		$("#translation").html("");
 		for (var i = 0; i < Language.getLexicon()[0].length; i++) {
 				var word = Language.getLexicon()[0][i];
 				// var wordToString = word.toString();
