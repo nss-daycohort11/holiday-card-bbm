@@ -5,17 +5,19 @@
 	<title></title>
 </head>
 <body>
-<textarea>
+<textarea id="inputBox">
 </textarea>
-<select>
-	<option>German</option>
-	<option>French</option>
-	<option>Italian</option>
+<select id="selection">
+	<option value="german">German</option>
+	<option value="french">French</option>
+	<option value="italian">Italian</option>
 </select>
-<button>Translate</button>
+<button id="translate_btn">Translate</button>
 <div id="translation">
 </div>
 <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
 <script src="language.js"> </script>
+<script src="language_augment_french.js"> </script>
+<script src="functionality.js"> </script>
 </body>
 </html>
